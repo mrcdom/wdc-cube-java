@@ -1,0 +1,9 @@
+{
+	"maxThreads": 200,
+	"minThreads": 8,
+	"threadTimeoutMillis": 60000,
+	"host": "127.0.0.1",
+	"port": 8080,
+	"idleTimeout": 3600000,
+	"shoppingDataSource": "ds-shopping-memory.json"
+}

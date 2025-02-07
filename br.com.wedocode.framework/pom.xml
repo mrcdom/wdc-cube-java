@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>br.com.wedocode.framework</groupId>
+	<artifactId>br.com.wedocode.framework</artifactId>
+	<version>1.0.0</version>
+
+	<packaging>pom</packaging>
+
+	<distributionManagement>
+		<repository>
+			<id>artifactory-wedocode-release</id>
+			<name>libs-release-local</name>
+			<url>${repo.url}/libs-release-local</url>
+		</repository>
+		<snapshotRepository>
+			<id>artifactory-wedocode-snapshot</id>
+			<name>libs-snapshot-local</name>
+			<url>${repo.url}/libs-snapshot-local</url>
+		</snapshotRepository>
+	</distributionManagement>
+
+	<modules>
+		<module>br.com.wedocode.framework.dependencies</module>
+		<module>br.com.wedocode.framework.commons</module>
+		<module>br.com.wedocode.framework.webflow</module>
+		<module>com.github.adrianmsmith.gwt-time</module>
+		<module>ru.finam.slf4j-gwt</module>
+	</modules>
+
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-war-plugin</artifactId>
+					<version>3.3.2</version>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<version>3.10.1</version>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+
+</project>

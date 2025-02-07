@@ -1,0 +1,26 @@
+{
+  "name": "wdc-shopping-react",
+  "source": "src/index.html",
+  "targets": {
+    "default": {
+      "distDir": "../br.com.wedocode.shopping.view.react.stub/src/main/resources/META-INF/resources"
+    }
+  },
+  "scripts": {
+    "start": "parcel watch --public-url ./",
+    "watch": "parcel watch --public-url ./",
+    "build": "parcel build --public-url ./"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.3",
+    "@types/react-dom": "^19.0.2",
+    "parcel": "^2.13.3",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "history": "^5.3.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "universal-cookie": "^7.2.2"
+  }
+}

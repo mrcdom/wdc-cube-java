@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jboss-deployment-structure>
+	<ear-subdeployments-isolated>false</ear-subdeployments-isolated>
+	<deployment>
+		<dependencies>
+			<module name="org.slf4j" />
+			<module name="org.apache.commons.logging" />
+			<module name="com.h2database.h2" />
+		</dependencies>
+	</deployment>
+</jboss-deployment-structure>
